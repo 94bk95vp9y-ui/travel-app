@@ -1,0 +1,51 @@
+{
+  "name": "fernweh",
+  "version": "1.0.0",
+  "description": "Persönlicher Reise-Atlas als Web-App fürs iPhone",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc --noEmit -p tsconfig.json && vite build",
+    "preview": "vite preview --host",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "build:data": "node scripts/build-data.mjs",
+    "build:icons": "node scripts/make-icons.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/94bk95vp9y-ui/travel-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/94bk95vp9y-ui/travel-app/issues"
+  },
+  "homepage": "https://github.com/94bk95vp9y-ui/travel-app#readme",
+  "dependencies": {
+    "d3-geo": "^3.1.2",
+    "globe.gl": "^2.46.2",
+    "idb-keyval": "^6.3.0",
+    "lucide-react": "^1.70.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "three": "^0.187.0",
+    "topojson-client": "^3.1.0",
+    "zustand": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/d3-geo": "^3.1.1",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.187.0",
+    "@types/topojson-client": "^3.1.5",
+    "@vitejs/plugin-react": "^6.2.1",
+    "mapshaper": "^0.7.101",
+    "topojson-server": "^3.0.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.6",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^5.1.0",
+    "world-countries": "^5.1.0"
+  },
+  "private": true,
+  "type": "module"
+}
